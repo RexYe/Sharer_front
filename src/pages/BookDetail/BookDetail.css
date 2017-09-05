@@ -1,0 +1,45 @@
+.BookDetail .book-intro{
+  width: 100%;
+  height: 15rem;
+  background-color: #ebebeb;
+  list-style: none;
+}
+.BookDetail .book-info{
+  list-style: none;
+  font-size: 0.68rem;
+  line-height: 1rem;
+  color: #8b8b8b;
+  text-align: center;
+}
+.BookDetail .book-info #book-info-price{
+  color: #da2e52;
+  text-decoration: line-through;
+}
+.BookDetail .book-intro .book-img{
+  width: 8rem;
+  height: 11.5rem;
+  margin: 0 auto;
+}
+.BookDetail .book-seller-list .book-seller-list-detail{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  background-color: #f0f0f0;
+  margin-top: 0.8rem;
+  list-style: none;
+  font-size: 0.9rem;
+  color: #8b8b8b;
+}
+.BookDetail .book-seller-list .book-seller-list-detail img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+.BookDetail .book-seller-list .book-seller-list-detail li{
+  margin-left: 1rem;
+}
+
+.BookDetail .book-seller-list .book-seller-list-detail #book-seller-price{
+  color: #da4d4d;
+}

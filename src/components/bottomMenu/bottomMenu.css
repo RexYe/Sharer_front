@@ -1,0 +1,56 @@
+/*@function pxToVw($px) {
+   @return $px/750*100*2vw;
+}*/
+#my_bottom_menu{
+  position: fixed;
+  bottom: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  height: 3rem;
+  align-items: center;
+  box-shadow: 0 1px 5px 3px #ddd;
+}
+#my_bottom_menu dd{
+  -webkit-margin-start: 0;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#my_bottom_menu dd i{
+  height: 2rem;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#my_bottom_menu dd i.index{
+  background-image: url("../../img/index.png");
+}
+#my_bottom_menu dd i.publish{
+  background-image: url("../../img/publish.png");
+}
+#my_bottom_menu dd i.me{
+  background-image: url("../../img/me.png");
+}
+#my_bottom_menu dd span{
+  color: #949494;
+  font-size: 0.5rem;
+  padding-top: 0.22rem;
+}
+#my_bottom_menu dd.on i.index{
+  background-image: url("../../img/index_on.png");
+}
+#my_bottom_menu dd.on i.publish{
+  background-image: url("../../img/publish_on.png");
+}
+#my_bottom_menu dd.on i.me{
+  background-image: url("../../img/me_on.png");
+}
+#my_bottom_menu dd.on span{
+  color:#294057;
+}
