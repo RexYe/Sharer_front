@@ -13,11 +13,15 @@
 			<mt-popup
 			v-model="popupVisible"
 			popup-transition="popup-fade"
-			modal="false"
 			position="right">
 			<div class="school-list">
-				<div class="shcool-detail">
-					<span>浙江工业大学</span>
+				<div class="shcool-detail" v-for="(item,index) in school_list">
+					<span>{{item.name}}</span>
+					<div class="college-list-container">
+						<div class="college-list" v-for="i in item.college ">
+							{{i.college}}
+						</div>
+					</div>
 				</div>
 			</div>
 		</mt-popup>
@@ -32,7 +36,6 @@
 					计算机∨
 				</div>
 			</div>
-
 <!-- tab-container -->
 <div class="course-container">
 	<mt-tab-container v-model="selected"  swipeable>
@@ -142,7 +145,40 @@ export default {
 					name:'java',
 					key:'java'
 				}]
-			}]
+			}],
+			school_list:[
+				{
+					name:'浙江工业大学',
+					college:[
+						{
+							college:'计算机学院'
+						},
+						{
+							college:'经贸管理学院'
+						},
+						{
+							college:'机械学院'
+						},
+						{
+							college:'艺术学院'
+						},
+						{
+							college:'信息学院'
+						}
+					]
+				},
+				{
+					name:'浙江大学',
+					college:[
+						{
+							college:'计算机学院'
+						},
+						{
+							college:'经贸管理学院'
+						},
+					]
+				}
+			]
 		}
 	},
 	components: {

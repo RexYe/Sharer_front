@@ -1,0 +1,32 @@
+.Publish{
+  padding: 0.3rem;
+  margin-top: 1rem;
+  list-style: none;
+  font-size: 1rem;
+}
+.Publish .upload-img{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+}
+.Publish .upload-img .img-btn{
+  width: 4rem;
+  height: 4rem;
+  background-color: #b5b2ac;
+  margin: 0.3rem;
+}
+.Publish .college{
+  font-size: 0.5rem;
+}
+.Publish .publish-bottom-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  text-align: center;
+
+}
+.Publish .mint-button--danger{
+  width: 99%;
+  margin-top: 0.5rem;
+}

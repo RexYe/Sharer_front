@@ -10,6 +10,7 @@ const TestVuex = resolve => require(['@/pages/TestVuex/TestVuex.vue'], resolve)
 const Publish = resolve => require(['@/pages/Publish/Publish.vue'], resolve)
 const Me = resolve => require(['@/pages/Me/Me.vue'], resolve)
 const BookDetail = resolve => require(['@/pages/BookDetail/BookDetail.vue'], resolve)
+const OrderDetail = resolve => require(['@/pages/OrderDetail/OrderDetail.vue'], resolve)
 Vue.use(Router)
 
 export default new Router({
@@ -38,6 +39,10 @@ export default new Router({
     {
       path:'/bookdetail',
       component:BookDetail
+    },
+    {
+      path:'/orderdetail',
+      component:OrderDetail
     }
   ]
 })

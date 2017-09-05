@@ -106,3 +106,29 @@
   height: 5rem;
   margin: 0.8rem;
 }
+.choose-school .mint-popup.mint-popup-right{
+  width: 75%;
+  height: 100%;
+}
+.school-list .shcool-detail{
+  font-size: 0.8rem;
+  border-bottom: 0.005rem solid #838383;
+  margin-top: 0.3rem;
+}
+.college-list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.school-list .college-list{
+  margin: 0.5rem 0.5rem 0.3rem 0.4rem;
+  padding: 0 0.6rem 0 0.6rem;
+  line-height: 1.3rem;
+  text-align: center;
+  width: auto;
+  height: 1.3rem;
+  border-radius: 0.65rem;
+  font-size: 0.5rem;
+  background-color: #dbdbdb;
+}

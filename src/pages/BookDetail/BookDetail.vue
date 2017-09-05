@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="book-seller-list">
-      <div class="book-seller-list-detail" v-for="item in book_seller">
+      <div class="book-seller-list-detail" v-for="item in book_seller" :class='{on:(type===item.type||+type===index+1),on:$route.path === `/${item.to}`}' @click='toOther(item.to,type===item.type||+type===index+1)'>
         <img :src="item.head_img">
         <li>{{item.name}}</li>
         <li id="book-seller-price">¥：{{item.price}}</li>
@@ -48,6 +48,8 @@ export default {
         name:'许见阳',
         head_img:'http://www.dayila.net/_static/kh_book_cover/2012_07/13929643555306f303521bb0.96867513.jpg',
         price:'10',
+        type:'orderdetail',
+        to:'orderdetail'
       },
     {
       name:'吴家成',
@@ -59,6 +61,13 @@ export default {
       head_img:'',
       price:'13',
     }]
+    }
+  },
+  methods:{
+    toOther:function(to,run) {
+      if(this.$route.path!==`/${to}`){
+        location.hash = to;
+      }
     }
   }
 }

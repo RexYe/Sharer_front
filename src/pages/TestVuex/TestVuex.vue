@@ -14,31 +14,31 @@ export default {
 
 	},
 	computed:{
-		...mapGetters([
-			'getter1',
-			'get1'
-			]),
-		...mapState([
-			'count',
-			'part2'
-		])
+		// ...mapGetters([
+		// 	'getter1',
+		// 	'get1'
+		// 	]),
+		// ...mapState([
+		// 	'count',
+		// 	'part2'
+		// ])
 	},
 	data(){
 		return {
 		}
 	},
 	methods:{
-		changeStore(){
-			this.$store.commit('increment')
-		},
-		...mapMutations([
-			'decrement',
-			'add'
-			]),
-		...mapActions([
-			'incrementAsync',
-			'addSync'
-			])
+		// changeStore(){
+		// 	this.$store.commit('increment')
+		// },
+		// ...mapMutations([
+		// 	'decrement',
+		// 	'add'
+		// 	]),
+		// ...mapActions([
+		// 	'incrementAsync',
+		// 	'addSync'
+		// 	])
 	}
 }
 </script>

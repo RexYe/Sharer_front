@@ -1,0 +1,69 @@
+.OrderDetail{
+  font-size: 0.7rem;
+
+}
+.OrderDetail .order-container{
+    padding: 0.3rem;
+}
+.OrderDetail .top-user{
+  color: #2f2f2f;
+  height: 2.5rem;
+  display: flex;
+  list-style: none;
+  padding: 0.3rem;
+  margin-bottom: 0.9rem;
+}
+.OrderDetail .top-user #date{
+  margin-top: 0.2rem;
+  color: #989898;
+}
+.OrderDetail .top-user img{
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 1.9rem;
+  margin-right: 0.5rem;
+}
+.OrderDetail .top-user #price{
+  margin-top: 0.4rem;
+  color: #e8bc38;
+  padding-left: 60%;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.OrderDetail .sth-about-book{
+  width: 100%;
+  height: auto;
+  color: #282828;
+  margin-bottom: 1rem;
+}
+.book-photo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book-photo img{
+  width: 100%;
+  height: 100%;
+  margin: 0.3rem;
+}
+.order-bottom-menu{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  height: 2.5rem;
+  border-top: 1px solid grey;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.order-bottom-menu .join-want{
+  width: 50%;
+  background-color: white;
+  color: #5e5e5e;
+}
+.order-bottom-menu .i-want{
+  color: white;
+  width: 50%;
+  background-color: #eb3535;
+}
